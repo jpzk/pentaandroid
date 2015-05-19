@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/box2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:id="@+id/control_header"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="7"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/balk2"
+                    android:gravity="left"
+                    android:text="time"
+                    android:textColor="#000" />
+
+                <ImageView
+                    android:id="@+id/baken"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/balk2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/timeCounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:text="00ms"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FFF" />
+
+                <ImageView
+                    android:id="@+id/timebar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/balk2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/input_part"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/input"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <include
+                android:id="@+id/topline_ref"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                layout="@layout/line" />
+
+            <include
+                android:id="@+id/bottomline_ref"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                layout="@layout/line"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/help"
+                android:layout_width="fill_parent"
+                android:soundEffectsEnabled="false"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/manual1"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/score"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.3"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            layout="@layout/score" />
+
+        <include
+            android:id="@+id/bestscore_ref"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            layout="@layout/bestscore" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/control_part"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.1" >
+
+        <LinearLayout
+            android:id="@+id/control"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="20dp" >
+
+            <include
+                android:id="@+id/sidebar_ref"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_weight="4"
+                layout="@layout/sidebar" />
+
+            <include
+                android:id="@+id/numpad_ref"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                layout="@layout/numpad" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

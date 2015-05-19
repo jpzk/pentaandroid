@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="15dp" >
+    
+    <TextView
+        android:id="@+id/tvRank"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="Rank"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/tvPlayer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="Player"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+   <TextView
+       android:id="@+id/tvHighscore"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_weight="1"
+       android:text="Score"
+       android:textColor="#FFF"
+       android:textSize="20sp" />
+
+</LinearLayout>

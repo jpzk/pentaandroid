@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sidebar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/mute_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_transparent"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/sound" />
+
+    <ImageButton
+        android:id="@+id/help_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_transparent"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/question" />
+
+    <ImageButton
+        android:id="@+id/initGameBtn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_transparent"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/newgame" />
+
+</LinearLayout>

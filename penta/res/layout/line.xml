@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/indicator"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:paddingRight="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dot" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        layout="@layout/cell_row" />
+
+</LinearLayout>
